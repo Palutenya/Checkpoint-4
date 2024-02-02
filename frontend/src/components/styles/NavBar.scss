@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: lightblue;
+
+  a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 1rem;
+
+    &:hover {
+      color: #007BFF;
+    }
+  }
+}
+
+.link-css {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 2rem;
+
+  &:hover {
+    color: #007BFF;
+  }
+}

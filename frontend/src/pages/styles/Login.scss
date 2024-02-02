@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+
+  .Connexion {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .connexionForm {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 1.25rem;
+    border-radius: 1rem;
+
+    background-color: orange;
+
+    .username-label,
+    .password-label {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+
+      .UsernameInput,
+      .PasswordInput {
+        font-size: 1rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        border: 1px solid black;
+        border-radius: 1rem;
+        width: 100%;
+      }
+    }
+
+    .inscription {
+      margin-top: 1rem;
+      padding: 1rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 1rem;
+      background-color: lawngreen;
+      color: #ffffff;
+      cursor: pointer;
+      width: 100%;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
