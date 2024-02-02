@@ -1,23 +1,33 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import "./styles/Login.scss";
 
-function connexion() {
+function Inscription() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (username && password) {
-      navigate("/nothing");
+      try {
+        await db.query(
+          "INSERT INTO users (username, password) VALUES ($1, $2)",
+          [username, password]
+        );
+        // Redirect to the login page
+        navigate("/login");
+      } catch (error) {
+        console.error("Error inserting user:", error);
+      }
     }
   };
 
   return (
     <div className="Login-container">
-      <h2 className="Connexion">Connexion</h2>
-      <form onSubmit={handleSubmit} className="connexionForm">
+      <h2 className="Inscription">Inscription</h2>
+      <form onSubmit={handleSubmit} className="inscriptionForm">
         <label className="username-label">
           Username:
           <input
@@ -44,4 +54,4 @@ function connexion() {
   );
 }
 
-export default connexion;
+export default Inscription;
