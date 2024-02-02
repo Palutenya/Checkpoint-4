@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "inscription", // Add new route
-        element: <Inscription 0/>,
+        element: <Inscription />,
       },
     ],
   },
