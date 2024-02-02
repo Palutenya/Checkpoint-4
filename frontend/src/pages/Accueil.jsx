@@ -4,7 +4,8 @@ function Home() {
   return (
     <div>
       <h1>Welcome to the Home Page</h1>
-      <p>Y'a R</p>
+      <p className="Phrase">Y'a R</p>
+      <p className="Redirection">Connectez vous pour plus de contenu</p>
     </div>
   );
 }
