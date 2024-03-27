@@ -1,8 +1,7 @@
 ## Concept
 
-Ce site web a été réalisé dans le cadre de ma formation à la Wild Code School
-Il a été réalisé suivant les consignes du Checkpoint 4, à savoir créer une appli web front et back avec une fonctionnalitée.
-Pour ce faire j'ai utilisé le template de la Wild afin d'être sur un environnemnt pré-configuré avec ESLint et Prettier afin de garder un code propre.
+Ce site a été réalisé pour un ami.
+ j'ai utilisé le template de la Wild Code School afin d'être sur un environnemnt pré-configuré avec ESLint et Prettier afin de garder un code propre.
 
 J'utilise NPM pour la gestion des packages
 
@@ -10,7 +9,6 @@ J'utilise NPM pour la gestion des packages
   - Axios
   - SASS
   - mUI (Material UI)
-  - Markdown Editor for React
   - Vis.js
 
 **Back :** 
